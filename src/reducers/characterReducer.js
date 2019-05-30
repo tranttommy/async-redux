@@ -1,10 +1,10 @@
-import { FETCH_CHARACTERS } from '../actions/characterActions';
+import { DISPATCH_CHARACTERS } from '../actions/characterActions';
 
 const initialState = [];
 
 export default (state = initialState, action) => {
   switch(action.type) {
-    case FETCH_CHARACTERS:
+    case DISPATCH_CHARACTERS:
       return [...state, ...action.payload];
     default:
       return state;
